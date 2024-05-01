@@ -20,12 +20,10 @@ time.sleep(1)
 
 # text = driver.find_element(By.CLASS_NAME, "MunejIkN fngyJTfR").text
 text = driver.find_element(By.XPATH, "//span[@unselectable='on']").find_element(By.XPATH, "..").text
-text = text.split("\n")
-print(type(text))
-print(text[0])
+print(text)
 
-pyautogui.typewrite(text[0],0.2)
+pyautogui.typewrite(text,0.15)
 
-time.sleep(15)
+time.sleep(1)
 driver.close()
 
